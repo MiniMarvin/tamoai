@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-tamoai-dev-173108-authRole",
+            "UnauthRoleArn": "arn:aws:iam::327787252685:role/amplify-tamoai-dev-173108-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::327787252685:role/amplify-tamoai-dev-173108-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-tamoai-dev-173108-deployment",
+            "UnauthRoleName": "amplify-tamoai-dev-173108-unauthRole",
+            "StackName": "amplify-tamoai-dev-173108",
+            "StackId": "arn:aws:cloudformation:us-east-1:327787252685:stack/amplify-tamoai-dev-173108/182fc950-633a-11eb-9a17-0e2a8c6e8545",
+            "AmplifyAppId": "dj0sam1a0e0my"
+        }
+    }
+}
