@@ -1,0 +1,13 @@
+path {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation: draw 14000ms ease-in-out 4ms forwards;
+  color: blue;
+  background-color: blue;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

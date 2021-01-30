@@ -1,15 +1,18 @@
 const steps = [
   {
-    title: "Se precisar a gente ta aí",
-    description: "pode clicar no botão vermelho pra rer o resto da mensagem",
+    title: "Ei pow, lembra das amizades",
+    description: "elas vão estar do teu lado e isso é importante...",
     buttonClass: "button-1",
+    svgSrc: "assets/thisisfine.svg",
   },
   {
-    title: "A gente não se conhece muito mas tu parece super legal",
+    title: "A gente não se conhece muito ainda mas tamo junto",
+    description: "pode ser pra tour de choro ou tour engraçada ou...",
     buttonClass: "button-2",
+    svgSrc: "assets/cat.svg",
   },
   {
-    title: "Por isso, pode contar comigo pra te ajudar",
+    title: "Mesmo pra ver gif de gatinho 😉",
     buttonClass: "button-3",
   },
   {
@@ -34,9 +37,10 @@ const steps = [
   },
 ];
 
-const step = 0;
+const step = 1;
 
 function load() {
+  document.getElementById("image").setAttribute("data", steps[step].svgSrc);
   document.getElementById("title").innerText = steps[step].title;
   document.getElementById("description").innerText = steps[step].description;
   document.getElementById("button").className = steps[step].buttonClass;
@@ -49,4 +53,4 @@ function nextStep() {
 
 window.onload = () => {
   load();
-}
+};
