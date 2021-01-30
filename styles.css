@@ -6,6 +6,7 @@ html {
   top: 0;
   overflow: auto;
   background-color: #1a0121;
+  animation: bgDark 1s normal forwards;
 }
 
 body {
@@ -27,6 +28,7 @@ section,
 html {
   font-family: "Comfortaa";
   color: white;
+  text-align: center;
 }
 
 button {
@@ -42,10 +44,6 @@ button {
   align-items: center;
 }
 
-.lightBackground {
-  animation: mymove 1s infinite;
-}
-
 .lightBackground h1,
 .lightBackground h2,
 .lightBackground h3,
@@ -59,8 +57,19 @@ button {
   color: #333;
 }
 
-@keyframes mymove {
+.lightBackground {
+  animation: bgLight 1s normal forwards;
+  /* background-color: #f5d76e; */
+}
+
+@keyframes bgLight {
   100% {
     background-color: #f5d76e;
+  }
+}
+
+@keyframes bgDark {
+  100% {
+    background-color: #1a0121;
   }
 }

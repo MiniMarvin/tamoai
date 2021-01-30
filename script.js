@@ -4,12 +4,14 @@ const steps = [
     description: "elas vão estar do teu lado e isso é importante...",
     buttonClass: "button-1",
     svgSrc: "assets/thisisfine.svg",
+    bgClass: "",
   },
   {
     title: "A gente não se conhece muito ainda mas tamo junto",
     description: "pode ser pra tour de choro ou tour engraçada ou...",
     buttonClass: "button-2",
     svgSrc: "assets/cat.svg",
+    bgClass: "lightBackground",
   },
   {
     title: "Mesmo pra ver gif de gatinho 😉",
@@ -44,6 +46,8 @@ function load() {
   document.getElementById("title").innerText = steps[step].title;
   document.getElementById("description").innerText = steps[step].description;
   document.getElementById("button").className = steps[step].buttonClass;
+  document.getElementsByTagName("html")[0].className = steps[step].bgClass;
+  document.getElementsByClassName("content")[0].className = "content " + steps[step].bgClass;
 }
 
 function nextStep() {
